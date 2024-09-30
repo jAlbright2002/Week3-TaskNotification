@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/test")
 public class NotificationController {
 
-    @GetMapping
-    public String test() {
-        return "aijsbhbsdvbuhsdbujhsdkvb ks";
+    @GetMapping("/test")
+    public void test() {
+        System.out.println("Hate paddy");
+//        return "aijsbhbsdvbuhsdbujhsdkvb ks";
     }
 
 }
