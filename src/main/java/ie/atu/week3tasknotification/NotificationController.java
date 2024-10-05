@@ -5,12 +5,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/test")
 public class NotificationController {
 
-    @GetMapping
-    public String test() {
-        return "aijsbhbsdvbuhsdbujhsdkvb ks";
+    @GetMapping("/updated")
+    public String updatedTask() {
+        System.out.println("Updated");
+        return "Updated Task";
+    }
+
+    @GetMapping("/removed")
+    public String removedTask() {
+        System.out.println("Removed");
+        return "Removed Task";
+    }
+
+    @GetMapping("/added")
+    public String addedTask() {
+        System.out.println("Added");
+        return "Added Task";
     }
 
 }
